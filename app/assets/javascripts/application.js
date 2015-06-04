@@ -12,3 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+$(document).on("ready", function() {
+	// Codigo a ejecutar cuando el html esté listo.
+});

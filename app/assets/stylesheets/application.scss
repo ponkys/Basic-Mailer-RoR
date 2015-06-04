@@ -13,4 +13,17 @@
  *= require libs/normalize
  *
  */
+
 @import "libs/breve";
+
+html {
+	font-size:16px; /*Se le indica al explorador que siempre debe iniciar en 16px.*/
+	height:100%;
+	body {
+		font:normal 62.5% "Tahoma", "Arial"; /*Ahora se usan em para medir las fuentes en vez de px. 1em es igual a 10px*/ 
+		height:100%;
+		img, video, audio {
+			display:block;
+		}
+	}
+}
