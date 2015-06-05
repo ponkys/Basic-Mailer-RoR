@@ -7,4 +7,10 @@ class ApplicationController < ActionController::Base
   	render "/index"
   end
 
+  def email
+  	UserMailer.email_verification(params[:name], params[:email]).deliver_now
+  	puts "Se envio el correo."
+  	redirect_to "/"
+  end
+
 end
